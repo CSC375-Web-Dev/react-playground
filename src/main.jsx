@@ -1,15 +1,15 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import MainLayout from './components/MainLayout.tsx'
-import App from './pages/Home.tsx'
+import MainLayout from './components/MainLayout.jsx'
+import App from './pages/Home.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Counting from './pages/Counting.tsx'
-import Listing from './pages/Listing.tsx'
-import Cards from './pages/Cards.tsx'
-import API from './pages/API.tsx'
+import Counting from './pages/Counting.jsx'
+import Listing from './pages/Listing.jsx'
+import Cards from './pages/Cards.jsx'
+import API from './pages/API.jsx'
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>

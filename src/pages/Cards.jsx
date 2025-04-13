@@ -1,13 +1,7 @@
-import { JSX, useState } from "react";
-import Card from "../components/Card";
+import Card from '../components/Card'
 import styles from './Cards.module.css'
 
-interface Animal {
-    name: string
-    imageUrl: string;
-}
-
-const animals: Animal[] = [
+const animals= [
     {
         name: 'Sand Cat',
         imageUrl: 'https://outdoors.com/wp-content/uploads/2025/01/sand-cat-family.jpeg'
@@ -31,7 +25,7 @@ const animals: Animal[] = [
 ]
 
 export default function Cards() {
-    function createAnimalCardsHtml(): JSX.Element[] {
+    function createAnimalCardsHtml() {
         return animals.map(animal => {
             return (
                 // using component Card, passing in params as attributes

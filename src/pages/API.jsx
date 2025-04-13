@@ -1,16 +1,9 @@
-import axios from "axios";
-import { JSX, useEffect, useState } from "react";
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 import styles from './API.module.css'
 
-interface User {
-    id: number;
-    name: string;
-    username: string
-    email: string
-}
-
 export default function API() {
-    const [users, setUsers] = useState([] as User[])
+    const [users, setUsers] = useState([])
 
     async function getUsers() {
         const response = await axios.get('https://jsonplaceholder.typicode.com/users')
@@ -21,7 +14,7 @@ export default function API() {
         getUsers();
     }, [])
     
-    function createUsersHtml(): JSX.Element[] {
+    function createUsersHtml() {
         return users.map(user => {
             return ( 
                 <div className={styles.user} key={user.id}>
