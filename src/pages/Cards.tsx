@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import { JSX } from 'react'
 import Card from '../components/Card'
 import styles from './Cards.module.css'
 
