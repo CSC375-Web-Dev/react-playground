@@ -1,0 +1,48 @@
+.flex {
+    display: flex;
+}
+
+.flex-justify-content {
+    justify-content: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    width: 400px;
+}
+
+.button {
+    flex: 1 1 50%;
+    height: 40px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+    justify-content: center;
+}
+
+.shopping-list-label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.shopping-list {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.no-items-label {
+    margin: 2px;
+    font-style: italic;
+}

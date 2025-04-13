@@ -1,0 +1,19 @@
+.container {
+    width: 400px;
+    height: 400px;
+    box-shadow: 5px 5px 5px 2px black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.image {
+    object-fit: contain;
+    width: 100%;
+    height: 280px;
+    background-color: black;
+}
