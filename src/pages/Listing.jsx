@@ -1,8 +1,8 @@
-import { JSX, useState } from 'react'
+import { useState } from 'react'
 import styles from './Listing.module.css'
 
 export default function Listing() {
-    const [shoppingList, setShoppingList] = useState([] as string[])
+    const [shoppingList, setShoppingList] = useState([])
     const shoppingListItems = ['butter', 'milk', 'eggs', 'toilet paper']
 
     function addItemToList() {
@@ -19,7 +19,7 @@ export default function Listing() {
         setShoppingList(newList)
     }
 
-    function createShoppingListHTML(): JSX.Element {
+    function createShoppingListHTML() {
         // if no items in shopping list, return "no items added yet" label
         if (shoppingList.length === 0) {
             return (
